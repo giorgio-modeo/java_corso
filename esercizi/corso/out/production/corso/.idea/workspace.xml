@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa431c95-301b-4a8b-ae3d-2037a1cddacd" name="Changes" comment="" />
+    <list default="true" id="fa431c95-301b-4a8b-ae3d-2037a1cddacd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/DatabaseInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/SelectExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizi/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/corso.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corso/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corso/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corso/Esercizi/main$Mesi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corso/Esercizi/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corso/Esercizi/main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +35,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2M2as8QvU982KEHFgQZSkU3AVFZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -34,12 +45,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "Z:/java/java_corso/esercizi/corso/jdbc/mysql-connector-java-8.0.22.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
@@ -48,6 +65,30 @@
       <recent name="Z:\java\java_corso\esercizi\corso\21-02-2023" />
       <recent name="Z:\java\java_corso\esercizi\corso\21-02-2023\operatori" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainEnum" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2023_03_07_Enum.MainEnum" />
+      <module name="corso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_2023_03_07_Enum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mysql-connector-java-8.0.22.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/jdbc/mysql-connector-java-8.0.22.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.mysql-connector-java-8.0.22.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,5 +100,16 @@
       <updated>1676968336364</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jdbc/SelectExample.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
