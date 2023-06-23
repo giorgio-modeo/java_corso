@@ -8,21 +8,17 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter @NoArgsConstructor @EqualsAndHashCode
-public class TipoImmobile {
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private int id;
 
-    @Column(length = 25, nullable = false, unique = true)
-    private String tipoImmobile;
+    @Column(nullable = false, length = 20, unique = true)
+    private String role;
 
-    public TipoImmobile(String tipoImmobile) {
-        this.tipoImmobile = tipoImmobile;
-    }
-
-    public TipoImmobile(int id) {
-        this.id = id;
+    public Role(String role) {
+        this.role = role;
     }
 }

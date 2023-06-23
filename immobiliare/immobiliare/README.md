@@ -5,3 +5,4 @@
 **comune(id,comune,cap,provincia)
 **contratto(id,tipo_contratto)
 **annuncio(id,testo_annuncio.titolo_annuncio,visibile,data_creazzione,data_aggiornamento)
+

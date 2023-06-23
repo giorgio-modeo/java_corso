@@ -17,7 +17,7 @@ public class ProvinciaController {
 
     private final ProvinciaService provinciaService;
 
-    @GetMapping("/all") //localhost:8090/provincia/all
+    @GetMapping("/all") // localhost:8090/provincia/all
     public ResponseEntity<?> findAll(){
         return provinciaService.findAll();
     }

@@ -9,4 +9,6 @@ public interface TipoImmobileRepository extends JpaRepository<TipoImmobile, Inte
 
     Optional<TipoImmobile> findByTipoImmobile(String tipoImmobile);
 
+    boolean existsByTipoImmobile(String tipoImmobile);
+
 }

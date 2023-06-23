@@ -46,6 +46,17 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<!-- JWT -->
+<dependency>
+   <groupId>com.auth0</groupId>
+   <artifactId>java-jwt</artifactId>
+   <version>4.3.0</version>
+</dependency>
+<!-- Used for password encryption -->
+<dependency>
+   <groupId>commons-codec</groupId>
+   <artifactId>commons-codec</artifactId>
+</dependency>
 
 	<build>
 		<plugins>

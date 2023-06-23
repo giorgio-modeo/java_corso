@@ -1,6 +1,6 @@
 package it.ictpiemonte.immobiliare.controller;
 
-import it.ictpiemonte.immobiliare.service.ContrattoService;
+import it.ictpiemonte.immobiliare.service.TipoImmobileService;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.RequiredArgsConstructor;
@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("contratto")
-@RequiredArgsConstructor
+@RequestMapping("tipo-immobile")
 @Validated
-public class ContrattoController {
+@RequiredArgsConstructor
+public class TipoImmobileController {
 
-    private final ContrattoService contrattoService;
+    private final TipoImmobileService tipoImmobileService;
 
     @PostMapping
-    public ResponseEntity<?> addContratto(@RequestParam @NotBlank @Size(max=50, min=5) String tipoContratto){
-        return contrattoService.addContratto(tipoContratto);
+    public ResponseEntity<?> addTipoImmobile(@RequestParam @NotBlank(message="Tipo Immobile o è vuoto o è null") @Size(min=3, max=25) String tipoImmobile){
+        return tipoImmobileService.addTipoImmobile(tipoImmobile);
     }
 }

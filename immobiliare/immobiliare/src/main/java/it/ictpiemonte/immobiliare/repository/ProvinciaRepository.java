@@ -6,5 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface ProvinciaRepository extends JpaRepository<Provincia, String> {
-    List<Provincia> findAllByOrderByProvinciaAsc();
+
+    List<Provincia> findAllByOrderByProvinciaAsc(); // select * from provincia order by provincia ASC
+
 }

@@ -10,30 +10,32 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
-@Getter @Setter @NoArgsConstructor
+@Getter @Setter @NoArgsConstructor @EqualsAndHashCode
 public class Annuncio {
+
     @EmbeddedId
     @EqualsAndHashCode.Include
     private AnnuncioId annuncioId;
+
     @Column(nullable = false)
-    private  String testoAnnuncio;
+    private String testoAnnuncio;
 
-    @Column(nullable = false,length = 45)
-    private  String titoloAnnuncio;
+    @Column(nullable = false, length = 45)
+    private String titoloAnnuncio;
 
-    private  boolean visibile = true;
+    private boolean visible = true;
 
     @CreationTimestamp
     @Column(updatable = false)
     private LocalDateTime dataCreazione;
 
-    @UpdateTimestamp //funziona solo utilizzando il metodo 'save' di JPA
+    @UpdateTimestamp // funziona solo utilizzando il metodo 'save' di JPA
     private LocalDateTime dataAggiornamento;
 
+    private String image;
 
     public Annuncio(AnnuncioId annuncioId, String testoAnnuncio, String titoloAnnuncio) {
         this.annuncioId = annuncioId;

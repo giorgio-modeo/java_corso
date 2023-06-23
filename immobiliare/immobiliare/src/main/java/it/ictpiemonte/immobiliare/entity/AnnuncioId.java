@@ -8,13 +8,11 @@ import lombok.*;
 import java.io.Serializable;
 
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor @EqualsAndHashCode
-@Embeddable
+@Embeddable // da usare quando la PK è una FK oppure quando la PK è composita
 public class AnnuncioId implements Serializable {
+
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name="id")
     @EqualsAndHashCode.Include
     private Immobile immobile;
-
-
-
 }
